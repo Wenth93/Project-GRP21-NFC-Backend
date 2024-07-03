@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .profile-container h2 {
+            margin: 0 0 15px;
+        }
+        .profile-container p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Profile</h2>
+        <p><strong>ID:</strong> {{ user[0] }}</p>
+        <p><strong>First Name:</strong> {{ user[1] }}</p>
+        <p><strong>Last Name:</strong> {{ user[2] }}</p>
+        <p><strong>Email:</strong> {{ user[3] }}</p>
+        <p><strong>Service:</strong> {{ user[4] }}</p>
+        <p><strong>Created At:</strong> {{ user[5] }}</p>
+    </div>
+</body>
+</html>
